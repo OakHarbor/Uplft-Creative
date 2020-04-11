@@ -738,27 +738,6 @@ footer {
     transition: .3s ease;
 }
 
-.dark-toggle:after {
-    content: url('/moon.svg');
-    color: #2e2e2e;
-    position: absolute;
-    height: auto;
-    top: -26px;
-    -webkit-transition: .3s ease;
-    -o-transition: .3s ease;
-    transition: .3s ease;
-    opacity: 1;
-}
-
-.dark-toggle.dark-mode:after {
-    top: -70px;
-    visibility: hidden;
-    -webkit-transition: .3s ease;
-    -o-transition: .3s ease;
-    transition: .3s ease;
-    opacity: 0;
-}
-
 footer img {
     margin-bottom: 70px;
     margin-top: 50px;
