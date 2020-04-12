@@ -664,14 +664,14 @@ footer {
 .wire {
     height: 80px;
     width: 5px;
-    background: var(--secondary);
+    background: var(--primary);
     margin: auto;
 }
 
 .triangle {
     border-left: 26px solid transparent;
     border-right: 26px solid transparent;
-    border-bottom: 26px solid var(--secondary);
+    border-bottom: 26px solid var(--primary);
     -webkit-transform: translateY(-15px);
         -ms-transform: translateY(-15px);
             transform: translateY(-15px);
