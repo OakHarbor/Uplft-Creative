@@ -58,10 +58,11 @@
 }
 
 .slanted-graphic {
-    background: rgb(69,82,252);
-    background: -o-linear-gradient(329deg, rgba(69,82,252,1) 0%, rgba(37,245,254,1) 100%);
-    background: linear-gradient(121deg, rgba(69,82,252,1) 0%, rgba(37,245,254,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4552fc",endColorstr="#25f5fe",GradientType=1);
+    background: rgb(41,106,147);
+background: -moz-linear-gradient(121deg, rgba(41,106,147,1) 0%, rgba(59,151,210,1) 56%, rgba(37,245,254,1) 100%);
+background: -webkit-linear-gradient(121deg, rgba(41,106,147,1) 0%, rgba(59,151,210,1) 56%, rgba(37,245,254,1) 100%);
+background: linear-gradient(121deg, rgba(41,106,147,1) 0%, rgba(59,151,210,1) 56%, rgba(37,245,254,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#296a93",endColorstr="#25f5fe",GradientType=1);
         width: 100%;
     height: 200px;
     -webkit-transform: skewY(-15deg);
