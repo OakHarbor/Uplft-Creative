@@ -3,13 +3,25 @@
 <--- -------------------------- -*/
 
 #landing {
-    height: 300px;
+    height: 500px;
+    position: relative;
+    margin-bottom: 150px;
 }
 
 #landing h1 {
-    margin-top: 60px;
     font-size: 1.8em;
     margin-bottom: 20px;
+    width: 97%;
+    line-height: 1.3em;
+    font-weight: 800;
+}
+
+#landing h2 {
+    font-size: .9em;
+    width: 94%;
+    font-weight: 300;
+    margin-bottom: 20px;
+    line-height: 1.7em;
 }
 
 .quote-button {
@@ -20,6 +32,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    z-index: 10;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -36,189 +49,98 @@
     margin-left: 15px;
 }
 
-/*-- -------------------------- -->
-<---          PROJECTS          -->
-<--- -------------------------- -*/
-
-#projects {
-    position: relative;
+.v-image {
+    position: absolute;
+    right: -15px;
+    top: 330px;
+    z-index: 0;
+    width: 120px;
 }
 
 .slanted-graphic {
-    background: var(--primary);
-    width: 100%;
+    background: rgb(69,82,252);
+    background: -o-linear-gradient(329deg, rgba(69,82,252,1) 0%, rgba(37,245,254,1) 100%);
+    background: linear-gradient(121deg, rgba(69,82,252,1) 0%, rgba(37,245,254,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4552fc",endColorstr="#25f5fe",GradientType=1);
+        width: 100%;
     height: 200px;
     -webkit-transform: skewY(-15deg);
         -ms-transform: skewY(-15deg);
             transform: skewY(-15deg);
     position: absolute;
     z-index: -1;
+    bottom: -100px;
 }
 
-.project-box {
-    height: 200px;
+.slanted-graphic ul {
+    -webkit-transform: skewY(15deg);
+        -ms-transform: skewY(15deg);
+            transform: skewY(15deg);
+    margin-top: 80px;
+    list-style: none;
+    padding-left: 15px;
+}
+
+.slanted-graphic ul li {
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: .8em;
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background: var(--secondary);
-    -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.29);
-    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.29);
-    margin-bottom: 30px;
 }
 
-.project-box svg {
-    height: 27px;
-}
-
-.project-box h2 {
-    color: #fff;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.project {
-    width: 100%;
-    height: 220px;
-    -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.29);
-    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.29);
-    position: relative;
-    margin-bottom: 50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: flex-end;
-}
-
-.project:before {
-    content: '';
-    height: 30px;
-    width: 100%;
-    background: var(--secondary);
-    position: absolute;
-    bottom: 0;
-}
-
-.project-heading {
-    width: 100%;
-    margin: 10px;
-    padding: 16px 10px 10px 10px;
-    position: relative;
-    z-index: 100;
-    background: #fff;
-    -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.29);
-    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.29);
-}
-
-.project-heading h3 {
-    font-weight: 700;
-    font-size: .8em;
-}
-
-.project-heading h4 {
-    font-size: .6em;
-    color: #838383;
-}
-
-.project {
-    background: url("/images/valley.png");
-    background-size: cover;
-    background-position: center;
-}
-
-.project:last-child {
-    margin-bottom: 0px;
+.slanted-graphic ul li svg {
+    width: 20px !important;
+    height: auto;
+    margin-right: 10px;
 }
 
 /*-- -------------------------- -->
-<---            ABOUT           -->
+<---         WHAT WE DO         -->
 <--- -------------------------- -*/
 
-#who-we-are {
-    position: relative;
+.content {
+    margin-top: 50px;
 }
 
-.who-topper h2 {
-    color: var(--primary);
-    font-size: 1.1em;
-    font-weight: 900;
-    text-align: center;
-    width: 160px;
-    margin: auto;
-    position: relative;
+.item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background: #fff;
-    margin-bottom: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 50px;
 }
 
-.who-topper h2:before {
-    position: absolute;
-    content: '';
-    height: 3px;
-    width: 175px;
-    background: var(--primary);
-    z-index: -1;
-}
-
-.who-topper h3 {
+.item h3 {
+    margin: 15px auto;
     text-align: center;
-    font-size: 1.3em;
-    font-weight: 900;
-    margin-bottom: 50px;
 }
 
-.who-topper p {
+.item p {
     text-align: center;
-    margin-bottom: 50px;
 }
 
-.who-topper a {
-    color: var(--primary);
-}
-
-/* Spotlight */
-
-.partner {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-.partner img {
-    width: 90%;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.29);
-    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.29);
-}
-
-.partner:last-child {
-    margin-bottom: 50px;
-}
-
-.partner h3 {
-    margin-bottom: 10px;
-}
-
-.partner h4 {
-    text-transform: uppercase;
-    color: #838383;
-    letter-spacing: .2em;
-    font-weight: 0;
+.item svg {
+    width: 70px !important;
+    height: auto;
 }
 
 .orange-rectangle {
@@ -302,7 +224,7 @@
         -ms-flex-align: center;
             align-items: center;
     border-radius: 7px;
-    border-bottom: 4px solid var(--tertiary);
+    border-bottom: 7px solid var(--tertiary);
 }
 
 .cool-thing-we-do svg {
@@ -315,6 +237,7 @@
     text-align: center;
     margin: 20px auto;
     font-size: 1.3em;
+    letter-spacing: 2px;
 }
 
 .paragraph p {
@@ -328,6 +251,95 @@
 
 .services-button {
     margin: auto;
+}
+
+/*-- -------------------------- -->
+<---         WHAT WE DO         -->
+<--- -------------------------- -*/
+
+#who-we-are {
+    position: relative;
+}
+
+.who-topper h2 {
+    color: #121212;
+    font-size: 1.1em;
+    font-weight: 900;
+    text-align: center;
+    width: 130px;
+    margin: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.who-topper h2 span {
+    color: var(--primary);
+    margin-right: 4px;
+}
+
+.who-topper h2:before {
+    position: absolute;
+    content: '';
+    height: 3px;
+    width: 145px;
+    background: var(--primary);
+    z-index: -1;
+}
+
+.who-topper h3 {
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.who-topper p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.who-topper a {
+    color: var(--primary);
+}
+
+/* Spotlight */
+
+.partner {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.partner img {
+    width: 90%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.29);
+    box-shadow: 0px 0px 8px 1px rgba(0,0,0,0.29);
+}
+
+.partner:last-child {
+    margin-bottom: 50px;
+}
+
+.partner h3 {
+    margin-bottom: 10px;
+}
+
+.partner h4 {
+    text-transform: uppercase;
+    color: #838383;
+    letter-spacing: .2em;
+    font-weight: 0;
 }
 
 /*-- -------------------------- -->
@@ -496,4 +508,130 @@
     height: 3px;
     width: 30px;
     background: var(--secondary);
+}
+
+/* Tablets */
+@media screen and (min-width: 500px) and (max-width: 1024px) {
+
+    /*-- -------------------------- -->
+    <---          LANDING           -->
+    <--- -------------------------- -*/
+
+    #landing h1 {
+        width: 70%;
+        padding-top: 40px;
+    }
+
+    /*-- -------------------------- -->
+    <---          PROJECTS          -->
+    <--- -------------------------- -*/
+
+    .projects-group {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        -ms-grid-rows: 1fr 10px 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        height: 500px;
+        width: auto;
+    }
+
+    .projects-group > *:nth-child(1) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+    }
+
+    .projects-group > *:nth-child(2) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 3;
+    }
+
+    .projects-group > *:nth-child(3) {
+        -ms-grid-row: 1;
+        -ms-grid-column: 5;
+    }
+
+    .projects-group > *:nth-child(4) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .projects-group > *:nth-child(5) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
+    .projects-group > *:nth-child(6) {
+        -ms-grid-row: 3;
+        -ms-grid-column: 5;
+    }
+
+    .project-box {
+        margin: 0;
+        -ms-grid-column: 2;
+            grid-column-start: 2;
+        -ms-grid-column-span: 1;
+        grid-column-end: 3;
+        height: 100%;
+    }
+
+    .project {
+        margin: 0;
+        height: 100%;
+        position: relative;
+        border-radius: 8px;
+    }
+
+    .two {
+        -ms-grid-column: 3;
+        -ms-grid-column-span: 1;
+        grid-column: 3/4;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 2;
+        grid-row: 1/3;
+        background: #000;
+    }
+
+    .two img {
+        height: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+
+    .three {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 1;
+        grid-column: 1/2;
+        -ms-grid-row: 1;
+        -ms-grid-row-span: 1;
+        grid-row: 1/2;
+        background: rgb(90,58,180);
+background: -o-linear-gradient(329deg, rgba(90,58,180,1) 0%, rgba(29,127,253,1) 50%, rgba(69,252,238,1) 100%);
+background: linear-gradient(121deg, rgba(90,58,180,1) 0%, rgba(29,127,253,1) 50%, rgba(69,252,238,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5a3ab4",endColorstr="#45fcee",GradientType=1);
+    }
+
+    .four {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+        grid-column: 1/3;
+        position: relative;
+        background: #fff;
+    }
+
+    .four img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+    }
+
 }
